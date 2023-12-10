@@ -10,6 +10,7 @@ import DeployToken from "./pages/DeployToken/DeployToken";
 import Explore from "./pages/Explore/Explore";
 import IndividualDao from "./pages/IndividualDao/IndividualDao";
 import Profile from "./pages/Profile/Profile";
+import Space from "./pages/Space/Space";
 import "@rainbow-me/rainbowkit/styles.css";
 import {
   getDefaultWallets,
@@ -57,6 +58,7 @@ function App() {
               <Route path="/dao/:daoId" element={<IndividualDao />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/dao/:daoId/storage" element={<DAOStorage />} />
+              <Route path="/space/:spaceId" element={<Space />} />
             </Routes>
           </Router>
         </RainbowKitProvider>
